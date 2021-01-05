@@ -6,6 +6,8 @@ A coding challenge to create a function that returns the longest word in the sen
 
 ## Deployed app URL
 
+https://mohamedzakigithub.github.io/longest-word/
+
 ## Code
 
 ```javascript

@@ -1,8 +1,8 @@
-# Coding challenge
+# Coding challenge - Longest word
 
 ## Description
 
-A coding challenge to create a function that returns the longest word in the sentence. If there are two or more words that are the same length, return the first word from the string with that length.
+A coding challenge to create a function that returns the longest word in the sentence. If there are two or more words that are the same length, return the first word from the string with that length. The code removes special and non word characters from the input string using a regular expression then split to an array which is then iterated to find the longest word.
 
 ## Deployed app URL
 

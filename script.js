@@ -1,21 +1,21 @@
 // Variables declarations and DOM elements selection.
-var inputEl = document.querySelector("#input");
-var outputEl = document.querySelector("#result");
-var buttonEl = document.querySelector("#button");
+const inputEl = document.querySelector("#input");
+const outputEl = document.querySelector("#result");
+const buttonEl = document.querySelector("#button");
 
 // Add click listener to button
 buttonEl.addEventListener("click", function () {
-  // split input values on paces and store in an array.
-  inputArray = inputEl.value.split(" ");
+  // remove non word special characters and split input values on paces and store in an array.
+  const inputArray = inputEl.value.replace(/[^a-zA-Z\s]/g, "").split(" ");
   // get results and assign to output element
-  var result = getLongestWord(inputArray);
+  const result = getLongestWord(inputArray);
   outputEl.innerText = result;
 });
 
 // Function getLongestWord declaration
 function getLongestWord(arr) {
-  var maxLength = 0;
-  var result = "";
+  const maxLength = 0;
+  const result = "";
   for (let i = 0; i < arr.length; i++) {
     if (arr[i].length > maxLength) {
       maxLength = arr[i].length;
